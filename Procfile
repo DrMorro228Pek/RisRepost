@@ -1,1 +1,1 @@
-web: python VkRepost.py
+worker: python VkRepost.py
