@@ -3,9 +3,8 @@ import vk_api
 import json
 import random
 import time
-import data
 
-vk_session = vk_api.VkApi(data.login(), data.password())
+vk_session = vk_api.VkApi(LOGIN, PASS)
 vk_session.auth()
 count = 50
 
