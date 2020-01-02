@@ -74,8 +74,10 @@ while True:
         f1.close()
         f3.close()
         
-        # Кд для тетстов
+        # Кд для записей
         time.sleep(120.0+random.random()*100.0)
+    # Кд для работы
+    time.sleep(3600)
 
     
 
