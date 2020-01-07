@@ -58,8 +58,13 @@ while True:
             pass
         
             #Делаем репост
-        vk_session.method("wall.repost", {"object": str(full_object_link)})
-        
+        try:
+            vk_session.method("wall.repost", {"object" : str(full_object_link) })
+        except:
+            print("Достигнут лимит записей (>50)")
+            time.sleep(7200)
+            continue
+     
         print("Репостнул " + full_object_link + "\n")
         
         f3.write(fbl_for_yet + "\n")
