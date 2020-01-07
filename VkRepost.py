@@ -8,7 +8,7 @@ import os
 login, password = os.environ.get("LOGIN"), os.environ.get("PASS"), 
 vk_session = vk_api.VkApi(login, password)
 vk_session.auth()
-count = 50
+count = 10
 
 while True:
 
